@@ -12,6 +12,17 @@ using namespace std;
 
 Instance::Instance() { }
 
+Instance::Instance(const Instance& i)
+    : pathes(i.pathes),
+      nClients(i.nClients),
+      nFacilities(i.nFacilities),
+      nPathes(i.nPathes),
+      facilityCost(i.facilityCost),
+      costMatrix(i.costMatrix),
+      pathesWithFacility(i.pathesWithFacility)
+{
+}
+
 Instance::Instance(int nClients, int nFacilities, int nPathes)
 	: nClients(nClients), nFacilities(nFacilities), nPathes(nPathes)
 {

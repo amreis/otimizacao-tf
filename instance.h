@@ -21,6 +21,7 @@ public:
 	map<int, set<int> > pathesWithFacility;
     
 	Instance();
+    Instance(const Instance& i);
 	Instance(int, int, int);
 	
 	void setAllFacilityCosts(int);

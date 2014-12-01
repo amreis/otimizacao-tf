@@ -4,6 +4,7 @@
 #include <random>
 #include <chrono>
 
+
 Solution::Solution(const Solution& s)
     : openFacility(s.openFacility), 
       served(s.served),
@@ -15,14 +16,26 @@ Solution::Solution(const Solution& s)
 
 Solution Solution::getNeighbour ()
 {
+    
   unsigned seed1 = std::chrono::system_clock::now().time_since_epoch().count();
     Solution n(*this);
+    /*
+    #ifdef DEBUG
+    for (int client = 1; client <= inst.nClients; ++client)
+    {
+        int c = count(n.served[client].begin(), n.served[client].end(), true);
+        if (c != 1)
+        {
+            cout << "Client " << client << " is served by " << c << " pathes!" << endl;
+        }
+    }
+    #endif
+    * */
 	srand (time(NULL));
     std::default_random_engine generator(seed1);
     std::uniform_int_distribution<unsigned int> dist1(1, inst.nClients);
     
 	int	randomCustomer = dist1(generator);
-	cout << "Chose customer " << randomCustomer << " to change." << endl;
 	
 	vector < int > pathsThatReachCustomer;
 	for (int i=1; i <= inst.nPathes; i++)
@@ -36,12 +49,23 @@ Solution Solution::getNeighbour ()
     {
         newPath = dist2(generator);
     } while (served[randomCustomer][pathsThatReachCustomer[newPath]]);
-	cout << "Will open path " << newPath << endl;
+    newPath = pathsThatReachCustomer[newPath];
+    
+    for (int facility : n.inst.pathes[newPath])
+    {
+        if (!n.openFacility[facility])
+        {
+            n.openFacility[facility] = true;
+            n.cost += n.inst.facilityCost[facility];
+        }
+    }
+    
+    
     int weClosed;
     
     for (int i = 1; i <= inst.nPathes; ++i)
     {
-        if (served[randomCustomer][i])
+        if (n.served[randomCustomer][i])
         {
             n.cost -= inst.costMatrix[i][randomCustomer];
             n.served[randomCustomer][i] = false;

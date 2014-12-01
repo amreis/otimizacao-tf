@@ -1,0 +1,312 @@
+11
+3 1 0.98 1000 100
+Path 1 : 38 43 23 21 
+Path 2 : 18 35 27 6 
+Path 3 : 40 10 37 27 
+Path 4 : 29 30 10 3 
+Path 5 : 34 37 9 17 
+Path 6 : 14 15 18 30 
+Path 7 : 47 21 15 17 
+Path 8 : 23 25 47 24 
+Path 9 : 36 10 49 31 
+Path 10 : 46 7 21 37 
+Path 11 : 37 40 27 17 
+Path 12 : 30 18 36 15 
+Path 13 : 20 29 42 1 
+Path 14 : 50 19 13 37 
+Path 15 : 2 43 13 47 
+Path 16 : 12 18 42 24 
+Path 17 : 28 45 47 30 
+Path 18 : 12 45 13 5 
+Path 19 : 6 11 7 48 
+Path 20 : 34 20 21 19 
+Path 21 : 27 46 22 31 
+Path 22 : 8 49 32 42 
+Path 23 : 22 32 26 4 
+Path 24 : 24 50 48 11 
+Path 25 : 7 17 4 36 
+Path 26 : 42 31 26 27 
+Path 27 : 17 4 30 3 
+Path 28 : 37 34 24 25 
+Path 29 : 9 50 30 22 
+Path 30 : 32 22 23 10 
+Path 31 : 11 35 50 13 
+Path 32 : 2 27 37 17 
+Path 33 : 49 26 13 31 
+Path 34 : 32 4 7 22 
+Path 35 : 38 13 30 49 
+Path 36 : 9 16 43 35 
+Path 37 : 47 11 6 20 
+Path 38 : 43 9 40 16 
+Path 39 : 47 42 16 14 
+Path 40 : 25 7 2 27 
+Path 41 : 44 13 15 37 
+Path 42 : 43 29 27 1 
+Path 43 : 43 4 5 10 
+Path 44 : 19 17 39 16 
+Path 45 : 30 34 4 28 
+Path 46 : 14 15 18 48 
+Path 47 : 31 44 22 16 
+Path 48 : 21 40 17 27 
+Path 49 : 29 3 45 11 
+Path 50 : 48 24 31 3 
+Path 51 : 27 8 23 12 
+Path 52 : 11 18 16 44 
+Path 53 : 37 18 8 10 
+Path 54 : 32 25 41 9 
+Path 55 : 8 12 10 6 
+Path 56 : 25 33 14 13 
+Path 57 : 27 11 18 29 
+Path 58 : 3 24 47 26 
+Path 59 : 37 29 47 42 
+Path 60 : 4 37 23 8 
+Path 61 : 4 23 16 36 
+Path 62 : 27 50 33 1 
+Path 63 : 32 30 28 22 
+Path 64 : 23 29 21 26 
+Path 65 : 12 33 32 43 
+Path 66 : 48 46 31 47 
+Path 67 : 14 30 40 38 
+Path 68 : 16 30 10 11 
+Path 69 : 21 13 46 37 
+Path 70 : 14 37 22 3 
+Path 71 : 33 22 24 29 
+Path 72 : 24 7 3 27 
+Path 73 : 10 48 22 42 
+Path 74 : 28 14 44 36 
+Path 75 : 20 1 37 35 
+Path 76 : 30 2 24 10 
+Path 77 : 13 31 36 26 
+Path 78 : 49 14 18 34 
+Path 79 : 41 13 20 16 
+Path 80 : 10 45 18 39 
+Path 81 : 33 2 19 38 
+Path 82 : 38 15 5 28 
+Path 83 : 38 14 1 28 
+Path 84 : 37 21 6 47 
+Path 85 : 21 24 32 22 
+Path 86 : 29 38 35 43 
+Path 87 : 7 2 33 10 
+Path 88 : 41 24 39 46 
+Path 89 : 21 17 35 14 
+Path 90 : 17 48 27 22 
+Path 91 : 42 8 50 47 
+Path 92 : 25 4 5 21 
+Path 93 : 27 10 30 24 
+Path 94 : 38 47 27 42 
+Path 95 : 43 36 47 30 
+Path 96 : 1 37 12 35 
+Path 97 : 47 18 41 22 
+Path 98 : 22 50 10 29 
+Path 99 : 23 43 41 4 
+Path 100 : 14 20 36 23 
+Cost Matrix is 101 x 101
+Generated Instance
+0 0 0 1 1 1 1 0 0 0 1 1 0 1 1 1 0 1 1 1 1 1 1 0 0 0 0 1 0 1 1 0 0 0 1 1 1 1 1 1 0 0 0 1 0 1 1 1 1 0 0
+Greedy solution cost: 100380
+Chose customer 83 to change.
+Will open path 25
+Chose customer 45 to change.
+Will open path 46
+Chose customer 83 to change.
+Will open path 31
+Chose customer 20 to change.
+Will open path 68
+Chose customer 56 to change.
+Will open path 18
+Chose customer 90 to change.
+Will open path 25
+Chose customer 26 to change.
+Will open path 44
+Chose customer 76 to change.
+Will open path 24
+Chose customer 13 to change.
+Will open path 17
+Chose customer 48 to change.
+Will open path 27
+Chose customer 82 to change.
+Will open path 79
+Chose customer 17 to change.
+Will open path 36
+Chose customer 51 to change.
+Will open path 25
+Chose customer 86 to change.
+Will open path 88
+Chose customer 14 to change.
+Will open path 33
+Chose customer 71 to change.
+Will open path 52
+Chose customer 47 to change.
+Will open path 13
+Chose customer 82 to change.
+Will open path 36
+Chose customer 21 to change.
+Will open path 10
+Chose customer 75 to change.
+Will open path 38
+Chose customer 59 to change.
+Will open path 28
+Chose customer 32 to change.
+Will open path 89
+Chose customer 72 to change.
+Will open path 21
+Chose customer 9 to change.
+Will open path 55
+Chose customer 44 to change.
+Will open path 33
+Chose customer 78 to change.
+Will open path 65
+Chose customer 14 to change.
+Will open path 13
+Chose customer 50 to change.
+Will open path 40
+Chose customer 99 to change.
+Will open path 80
+Chose customer 34 to change.
+Will open path 98
+Chose customer 68 to change.
+Will open path 95
+Chose customer 85 to change.
+Will open path 13
+Chose customer 25 to change.
+Will open path 30
+Chose customer 61 to change.
+Will open path 86
+Chose customer 96 to change.
+Will open path 11
+Chose customer 42 to change.
+Will open path 98
+Chose customer 86 to change.
+Will open path 3
+Chose customer 22 to change.
+Will open path 84
+Chose customer 56 to change.
+Will open path 5
+Chose customer 90 to change.
+Will open path 21
+Chose customer 26 to change.
+Will open path 44
+Chose customer 82 to change.
+Will open path 73
+Chose customer 23 to change.
+Will open path 0
+Chose customer 59 to change.
+Will open path 70
+Chose customer 94 to change.
+Will open path 86
+Chose customer 30 to change.
+Will open path 74
+Chose customer 64 to change.
+Will open path 61
+Chose customer 100 to change.
+Will open path 66
+Chose customer 5 to change.
+Will open path 37
+Chose customer 40 to change.
+Will open path 4
+Chose customer 76 to change.
+Will open path 75
+Chose customer 10 to change.
+Will open path 94
+Chose customer 44 to change.
+Will open path 77
+Chose customer 78 to change.
+Will open path 22
+Chose customer 13 to change.
+Will open path 19
+Chose customer 57 to change.
+Will open path 49
+Chose customer 92 to change.
+Will open path 16
+Chose customer 27 to change.
+Will open path 93
+Chose customer 61 to change.
+Will open path 45
+Chose customer 97 to change.
+Will open path 29
+Chose customer 33 to change.
+Will open path 86
+Chose customer 80 to change.
+Will open path 46
+Chose customer 20 to change.
+Will open path 59
+Chose customer 55 to change.
+Will open path 56
+Chose customer 67 to change.
+Will open path 40
+Chose customer 25 to change.
+Will open path 34
+Chose customer 62 to change.
+Will open path 63
+Chose customer 95 to change.
+Will open path 13
+Chose customer 42 to change.
+Will open path 75
+WeClosed: 98
+Sizeof path: 4
+Chose customer 31 to change.
+Will open path 46
+Chose customer 66 to change.
+Will open path 37
+Chose customer 100 to change.
+Will open path 44
+Chose customer 35 to change.
+Will open path 28
+Chose customer 71 to change.
+Will open path 23
+Chose customer 14 to change.
+Will open path 79
+WeClosed: 13
+Sizeof path: 4
+Chose customer 59 to change.
+Will open path 59
+Chose customer 95 to change.
+Will open path 90
+Chose customer 31 to change.
+Will open path 53
+Chose customer 6 to change.
+Will open path 56
+Chose customer 76 to change.
+Will open path 30
+Chose customer 65 to change.
+Will open path 31
+Chose customer 63 to change.
+Will open path 91
+Chose customer 85 to change.
+Will open path 78
+Chose customer 86 to change.
+Will open path 65
+Chose customer 84 to change.
+Will open path 73
+Chose customer 80 to change.
+Will open path 85
+Chose customer 90 to change.
+Will open path 83
+Chose customer 32 to change.
+Will open path 88
+Chose customer 68 to change.
+Will open path 29
+Chose customer 2 to change.
+Will open path 79
+Chose customer 36 to change.
+Will open path 70
+Chose customer 72 to change.
+Will open path 97
+Chose customer 14 to change.
+Will open path 33
+WeClosed: 79
+Sizeof path: 4
+Chose customer 9 to change.
+Will open path 8
+Chose customer 45 to change.
+Will open path 28
+Chose customer 80 to change.
+Will open path 58
+Chose customer 94 to change.
+Will open path 24
+Chose customer 40 to change.
+Will open path 41
+Chose customer 74 to change.
+Will open path 32
+Chose customer 23 to change.
+Will open path 88

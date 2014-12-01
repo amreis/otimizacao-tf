@@ -91,11 +91,14 @@ Solution generateGreedySolution(Instance inst)
 
 Solution sim_annealing(Solution s, double k, double t, double r, int stop1, int stop2)
 {
+    using namespace std::chrono;
+    high_resolution_clock::time_point start = high_resolution_clock::now();
     unsigned seed1 = std::chrono::system_clock::now().time_since_epoch().count();
     std::default_random_engine generator(seed1);
     std::uniform_real_distribution<double> dist(0,1);
     for (int i = 0; i < stop2; ++i)
     {
+        //start = high_resolution_clock::now();
         for (int j = 0; j < stop1; ++j)
         {
             Solution n = s.getNeighbour();
@@ -111,6 +114,10 @@ Solution sim_annealing(Solution s, double k, double t, double r, int stop1, int 
             }
         }
         t *= r;
+        duration<double> span = duration_cast<duration<double>>(
+            high_resolution_clock::now() - start);
+        cout << "Outer loop iter " << i << ": sol cost => " << s.cost 
+            << " after " << span.count() << " seconds" << endl;
     }
     return s;
 }

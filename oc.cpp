@@ -101,7 +101,14 @@ Solution sim_annealing(Solution s, double k, double t, double r, int stop1, int 
         //start = high_resolution_clock::now();
         for (int j = 0; j < stop1; ++j)
         {
-            Solution n = s.getNeighbour();
+            double p = dist(generator);
+            Solution n(s);
+            if (p < 0.9)
+                n = s.getNeighbour();
+            else if (p < 0.95)
+                n = s.getNeighbour2();
+            else
+                n = s.getNeighbour3();
             if (n.cost < s.cost)
                 s = n;
             else
@@ -114,15 +121,20 @@ Solution sim_annealing(Solution s, double k, double t, double r, int stop1, int 
             }
         }
         t *= r;
+        
         duration<double> span = duration_cast<duration<double>>(
             high_resolution_clock::now() - start);
         cout << "Outer loop iter " << i << ": sol cost => " << s.cost 
-            << " after " << span.count() << " seconds" << endl;
+            << " after " << span.count() << " seconds (kT = " << k*t << ")" << endl;
+        if (k*t <= 0.0001) 
+        {
+            cout << "Too cold!" << endl;
+            break;
+        }
     }
     return s;
 }
 
-// ./prog -k <int> -t <int> -r <int> -s1 <int> -s2 <int>
 int main(int argc, char** argv)
 {
 	
@@ -132,7 +144,7 @@ int main(int argc, char** argv)
 	cout << argc << endl;
 	if (argc != 11)
 	{
-		cout << "Usage: " << "./prog -k <float> -t <float> -r <float> -s1 <int> -s2 <int>" << endl;
+		cout << "Usage: " << "./heur -k <float> -t <float> -r <float> -s1 <int> -s2 <int>" << endl;
 		return 0;
 	}
 	else
